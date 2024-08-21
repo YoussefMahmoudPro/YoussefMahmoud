@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='animation.css')}}">
+    <link rel="icon" href="../static/images/logo2.svg" />
+</head>
+<body  class="body" >
+<!---header---->
+   <header class="header">
+    <!---logo---->
+    <div class="login"><img class="logo-img" src="../static/images/logo.png" alt="Apple"></div>
+    <!---nav-bar--->
+    <nav>
+     <a href="/home" class="link-nav">Home</a>
+     <a href="/products" class="link-nav">Products</a>
+     <a href="/connect-us" class="link-nav">ConnectUs</a>
+     <a href="/sign-up" class="link-nav">SignUp</a>
+     <a href="/login" class="link-nav">Login</a>
+     <!----->
+    </nav>
+   </header>
+  
+   
+ {% block content%}{%endblock%}
+    
+          
+
+
+    <!--Javascript-->
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>
